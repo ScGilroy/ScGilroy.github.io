@@ -1,0 +1,22 @@
+<section id="{{ section.section_id }}" class="contact-section bg-cont {{ section.background_style }}">
+  <!-- <hr class="contact-hr"> -->
+  <div class="bg-aa">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col text-center">
+          <h2 class="cont-mar-top test">{{ section.title }}</h2>
+          <hr class="cont">
+          <img src="./assets/files/home/Gilroy_Scott.jpg" alt="Scott Gilroy" class="contact-img">
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        {% for action in section.actions %}
+        {% assign fa = action.icon_type | default: "fas" %}
+        <div class="cont-width text-center">
+            <a href='{{ action.url }}'> <i class="{{ fa }} {{ action.icon }} fa-3x mb-3 text-white"></i></a>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,68 @@
+---
+layout: project-layout
+project_title: Futuristic Clock from the Odd Couple (1970s)
+zip: /assets/files/projects/Odd_Couple_Clock/Odd_Couple_Clock.zip
+thingiverse: https://github.com/ScGilroy/Chess-Sudoku-Solvers
+featImg: /assets/files/projects/Odd_Couple_Clock/Banner.jpg
+---
+
+<div class="projectContentWrapper">
+  <div class="overview">
+    <div class="main">
+      <p class="medium bio">One of the most unique clock designs comes from one of my favorite TV shows, The Odd Couple which aired during the 1970s. I have been unable to find anyone who has recreated this clock which uses LEDs to display time in a unique fashion, so I decided to recreate it myself.</p>
+      <p class="small bio"> <b>Skills Utilized: </b></p>
+      <a class="tables">
+        <ul>
+          <li>Autodesk Inventor</li>
+          <li>C/Arduino</li>
+          <li>Circuitry</li>
+          <li>Rapid Prototyping</li>
+        </ul>
+      </a>
+      <a href="{{ page.zip }}" class="small bio">Click here to check out the Project Files!</a>
+    </div>
+  </div>
+  <hr>
+
+  <h4>Background</h4>
+  <p class="tab"> The idea for this clock came from the television show from the 1970s called The Odd Couple. The clock can be seen only in Season 3, Episode 22 where Felix Unger (Tony Randell) replaces all the furniture in Oscar Madison's (Jack Klugman) apartment which entails replacing their clock with a new, and much harder to read clock. The clock can be seen in the following clip.</p>
+
+  <div class="gallery">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/JZ1_bVk8_cY?start=85" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+  <p class="tab"> After looking around the internet, I have failed to find anyone that recreates this clock, so I set off the task to recreate a smaller nightstand version instead of a wall-mounted one.</p>
+
+  <h4>The Art of Telling Time</h4>
+  <p class="tab">Telling time is much different than conventional methods. The left half of the display is used to tell the hours (white LEDs) as well as AM/PM (blue LED). I am unsure if the clock in the TV show has a way to tell AM from PM but I decided to implement this with a blue LED. On the right half, the LEDs are split into two sections. The upper half features 5 LEDs which allow to tell the time in increments of 10 minutes. The lower half allows the user to tell 5 minutes (red LED) and 1 minute (white LEDs). With this combination, all times can be made with various combinations of LEDs. This can be seen in the following image.</p>
+  <img src="{{ site.url }}/assets/files/projects/Odd_Couple_Clock/Telling_Time.png" style="width:500px; height:auto;">
+
+  <h4>Circuit</h4>
+  <h2>Concept</h2>
+  <p class="tabMid">I wanted to make this clock as small as possible while remaining as inexpensive as possible so I decided to use an Arduino Nano which features 13 digital pins that I would use to control the 23 LEDs. By using the concept of multiplexing, I can individually address each LED and control when each LED turns on with only 10 pins (6 input, 4 output).</p>
+  <p class="tabMid">Power consumption is very limited as well to 40mA so I decided to address and blink six LEDs according to a single output pin and by using persistence in vision, the LEDs will be seen as solid. Depending on the delay in which the LEDs are on also determines the brightness of the LEDs, and I have found a good delay in the code by trial and error to achieve this.</p>
+
+  <h2>Schematic</h2>
+  <p class="tabMid">The main idea behind the circuit schematic is to create a 6x4 LED matrix in which I could control each LED individually. An Arduino Nano allows for this to be accomplished by directly controlling the input and outputs pins to be high and low and different times. This prevents the LEDs from gathering a forward voltage and lighting up. A Fritzing diagram which represents the LED matrix can be seen below.</p>
+  <img src="{{ site.url }}/assets/files/projects/Odd_Couple_Clock/Circuit_Schematic.png" style="width:750px; height:auto;">
+  <p class="tabMid">In the diagram, the Arduino Nano is used to control and light up the LEDs  on the clock. A DS3231 RTC (Real Time Clock) from Adafruit with a battery is used to maintain the programmed time after compiling the code and six 220 Ohm resistors are used to prevent the 23 LEDs from burning out.</p>
+  <img src="{{ site.url }}/assets/files/projects/Odd_Couple_Clock/Circuit.jpg" style="width:750px; height:auto;">
+
+  <h4>Clock Algorithm</h4>
+  <p class="tab">The algorithm utilizes boolean values for each LED as well as the pin address for the input and output to provide a method of directly controlling the LED. The algorithm itself is then broken into three major parts: Initialization, Time Update, and LED refreshing. The initialization code updates each LEDs boolean value per the initialization time. The time update takes the current time from the DS3231 every minute and then updates the boolean values of the LEDs associated. Lastly, the LED refreshing portion blinks the LEDs according to their output pin by turning on all LEDs according to their boolean value then shuts them off after a small delay.</p>
+
+  <h4>3D Model</h4>
+  <p class="tab">The model was created to be large enough to support the three boards and wires. To create a solid assembly, I had the faceplate slide into a groove on the frame. Both of the 3D printed parts are to be printed without supports to allow 6for a zero mess cleanup of the parts. Additionally, I printed the frame out of PETG for strength and durability while the faceplate was printed out of PLA due to the rapid cooling I can get with my printer. There are two tabs located near the bottom of the faceplate which allows for easy removable of the circuits. I decided to directly solder the ground pins of groups of 6 LEDs on the back of the faceplate. The inputs were then soldered to a wire which directly connects to the larger circuit. The battery for the DS3231 places before screwing the board into the respective place. After the boards are all screwed into place and the faceplate slide into the grove, the Arduino can be connected to a wall outlet.</p>
+
+  <div class="gallery">
+    <img class="lb-js low" data-type="image" src="{{ site.url }}/assets/files/projects/Odd_Couple_Clock/Assembly.png">
+    <img class="lb-js low" data-type="image" src="{{ site.url }}/assets/files/projects/Odd_Couple_Clock/Face.png">
+    <img class="lb-js low" data-type="image" src="{{ site.url }}/assets/files/projects/Odd_Couple_Clock/Frame.png">
+  </div>
+
+  <h4>Result</h4>
+  <p>The result is a 3D printable clock without supports which features 23 LEDs, an Arduino Nano, DS3231 RTC, and a prototype board with headers. The clock very accurately depicts the time and over time I have been able to read the time much more quickly than Oscar and Felix could in the clip of The Odd Couple.</p>
+    <img src="{{ site.url }}/assets/files/projects/Odd_Couple_Clock/Clock.jpg" style="width:600px; height:auto;">
+
+  <div class="spacer"></div>
+</div>

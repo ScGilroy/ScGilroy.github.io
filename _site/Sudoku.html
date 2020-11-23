@@ -1,0 +1,171 @@
+<!doctype html>
+<html prefix="og: http://ogp.me/ns#">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta property="og:title" content="Scott Gilroy Personal Website" />
+  <meta property="og:type" content="Portfolio" />
+  <meta property="og:image" content="https://ScGilroy.github.io/assets/files/home/background/Scott.jpg" />
+
+
+
+
+  <meta name="description" content="Homepage">
+  <!-- <meta name="image" property="og:image" content="https://ScGilroy.github.io/asseats/files/home/background/Berkeley.jpg"> -->
+  <!-- <meta name="author" content="Scott Gilroy"> -->
+
+  <title>Scott Gilroy</title>
+  <!-- Favicon-->
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+  <!-- Font Awesome icons (free version)-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css" crossorigin="anonymous">
+  <!-- Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+  <!-- Third party plugin CSS-->
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" /> -->
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link href="assets/css/creative.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Scott Gilroy | Homepage</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Scott Gilroy" />
+<meta name="author" content="Copyright Scott Gilroy" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Homepage" />
+<meta property="og:description" content="Homepage" />
+<link rel="canonical" href="http://localhost:4000/Sudoku.html" />
+<meta property="og:url" content="http://localhost:4000/Sudoku.html" />
+<meta property="og:site_name" content="Scott Gilroy" />
+<script type="application/ld+json">
+{"headline":"Scott Gilroy","@type":"WebPage","author":{"@type":"Person","name":"Copyright Scott Gilroy"},"description":"Homepage","url":"http://localhost:4000/Sudoku.html","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body id="page-top" class="">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand js-scroll-trigger" href="/#page-top">Scott Gilroy</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto my-2 my-lg-0">
+        
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#about">About Me</a>
+          </li>
+        
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#projects">Projects</a>
+          </li>
+        
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/Resume.html">Resume</a>
+          </li>
+        
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#contact">Contact</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <div class="bg-project">
+<!-- <header class="project-header-main" style="background-image:url('http://localhost:4000/assets/img/projects/sudoku/Banner.png"> -->
+<header class="project-header-main" style="background-image:url( http://localhost:4000/assets/img/projects/sudoku/Banner.png )">
+  <div class="bg-port"></div>
+  <div class="project-title-main">
+    <h1 class="project-title">Sudoku Solvers for Multiple Variants</h1>
+  </div>
+</header>
+<div class="projectContentWrapper">
+  <div class="overview">
+    <div class="main">
+      <p class="medium bio">I have found Classic Sudoku puzzles to be very interesting and a great logic puzzle. Recently I have come across multiple different variants which I have developed a solver to solve these variants in multiple different programming languages.</p>
+      <p class="challenge"><b>The Challenge:</b><br>How to develop a solver to solve different Sudoku variants within a reasonable time? How to determine all vaild solutions to the puzzle?</p>
+      <p class="result"><b>The Result:</b><br>A recursive solver which finds all possible solutions for the variant which is enabled. This solver is written in MatLab, Python and C++.</p>
+      <p class="small bio"> <b>Skills Utilized: </b></p>
+      <a class="tables">
+        <ul>
+          <li>Recursive Solvers</li>
+          <li>Matlab</li>
+          <li>Python 3.7</li>
+          <li>C++ 14</li>
+        </ul>
+      </a>
+      <a href="https://github.com/ScGilroy/Chess-Sudoku-Solvers" class="small bio">Click here to check out the Code!</a>
+    </div>
+  </div>
+  <hr>
+  <h4>Logic Heavy Approach</h4>
+  <p>To begin the project, I developed an algorithm for the classic sudoku puzzles in Matlab. This algorithm relies heavily on logic to place all values while iterating through the puzzle's 81 tiles. The algorithm can be broken down into two parts. The first part would determine all possible values for a specific tile (x,y). If there is only a single solution to the tile, it would place the answer into the box. The second algorithm determines if a row, column or box only has one missing value then places the value into the tile. The combination of these algorithms allows for the solver to solve classic sudoku puzzles between the difficulties of easy and hard.</p>
+  <div class="gallery">
+    <img class="lb-js low" data-type="image" src="http://localhost:4000/assets/img/projects/sudoku/Hard_Puzzle.png">
+    <img class="lb-js low" data-type="image" src="http://localhost:4000/assets/img/projects/sudoku/Hard_Puzzle_Sol.png">
+  </div>
+  <p class="centeredDesc noPad">Solution to the Logic Heavy Approach on a Hard Puzzle.</p>
+
+  <h4>Recursive Approach</h4>
+  <p>The recursive approach utilizes a back-tracking methodology. The algorithm checks the constraints for the box, column and row for possible values that a tile can take then picks the first value. The algorithm continues moving through the 81 tiles. If the algorithm gets stuck, the program will backtrack and try the next possible value. This method allowed for the code to solve any level of Sudoku puzzle in very quick times. Additionally, the program will also output all possible solutions allowing the user to determine if a unique solution exists for the puzzle.</p>
+
+  <h4>Additional Variants</h4>
+  <h2>Anti-King's Move Sudoku</h2>
+  <p>Anti-King's Move Sudoku infuses chess and sudoku. This variant adds an additional constraint where all the digits (1-9) can not be a king's move away from each other. With all the classic sudoku constraints, the only tiles added to the constraint are the ones which are a single diagonal tile away. </p>
+
+  <h2>Anti-Queen's Move Sudoku</h2>
+  <p>Anti-Queen's Move Sudoku is very similar to Anti-King's Move but adds the diagonal constraint for all tiles diagonal to the tile in question. This constraint is only active on a single digit (usually on the value 9). If this constraint was active for all values, the puzzle would be infeasible and therefore no solution would be found.</p>
+
+  <h2>Anti-Knight's Move Sudoku</h2>
+  <p>Anti-Knight's Move Sudoku is adds the constraint of a Knight in chess, where the knight moves in an L shape. This constraint is active for all numbers and provides one of my favorite variants of Sudoku.</p>
+
+  <img src="http://localhost:4000/assets/img/projects/sudoku/puzzle.png" style="width:500px; height:auto;">
+  <p class="centeredDesc noPad">Format for the Chess Variants.<br> Orange - Anti-Queen | Red - Anti-King | Green - Anti-Knight</p>
+
+  <h4>Results</h4>
+  <p>A robust Sudoku solver for the Classic, Anti-King's Move, Anti-Queen's move, and Anti-Knight's move variants which runs within a reasonable time. These were tested on multiple puzzles and the outputs were correct for each programming language.</p>
+  <div class="spacer"></div>
+</div>
+
+
+</div>
+
+  <!-- no footer at all! -->
+<footer class="bg-white py-5">
+  <div class="container">
+    <div class="small text-center foot-color">
+      &copy; 2020 by Scott Gilroy
+      &nbsp;
+      
+    </div>
+  </div>
+</footer>
+
+
+  <!-- Bootstrap core JS-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+  <!-- Third party plugin JS-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script> -->
+  <!-- Core theme JS-->
+
+  <script src="assets/js/creative.min.js"></script>
+</body>
+
+</html>

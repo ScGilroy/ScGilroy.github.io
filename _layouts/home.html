@@ -1,0 +1,22 @@
+---
+layout: base
+---
+
+<header class="home">
+  <div class="container h-100">
+    <div class="row align-items-baseline justify-content-center text-center">
+      <div class="col-lg-10">
+        <h1>{{ page.header.title }}</h1>
+        <p class="mt-home mb-5">{{ page.header.text }}</p>
+        <hr class="divider my-4">
+        <p class="mb-0">{{ page.header.school }}</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+{% for section in page.sections %}
+    {% include {{ section.type }} section=section site=site page=page %}
+{% endfor %}
+
+{{ content }}
