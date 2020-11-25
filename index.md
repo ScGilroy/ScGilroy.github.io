@@ -32,21 +32,16 @@ sections:
         icon: assets/files/projects/Sudoku/Icon.png
         url: 'Sudoku'
 
+      - title: Multipurpose Digital Scale
+        text: A scale designed to measure both weight and thrust with data acquisition.
+        icon: assets/files/projects/Scale/Icon.png
+        url: 'Scale'
 
 
 
 
 
-#      - title: Sudoku Solvers
-#        text: Solver created in Matlab, Python and C++ for multiple Sudoku variants.
-#        icon: Sudoku_Icon.png
-#        url: 'Sudoku'
-#
-#      - title: A Workbench with Added Storage
-#        text: A Workbench which allowed me to stay organized while providing a great place to work on hardware-based projects.
-#        icon: Workbench_Icon.jpg
-#        url: 'Workbench'
-#
+
 #      - title: State Estimator for a Vehicle
 #        text: A Unscented Kalman Filter approach to state estimation given sensor data from an IMU and GPS.
 #        icon: State_Estimation_Icon.gif

@@ -1,0 +1,54 @@
+---
+layout: project-layout
+project_title: Multipurpose Digital Scale for Weight and Thrust Measurements
+sitelink: https://github.com/ScGilroy/Chess-Sudoku-Solvers
+featImg: /assets/files/projects/Scale/Banner.png
+---
+
+<div class="projectContentWrapper">
+  <div class="overview">
+    <div class="main">
+      <p class="medium bio">Learning about strain gauges, I wanted to utilize this technology in a project. A digital scale that utilizes multiple strain gauges to measure beam deflection does this, and allows for weight and thrust to be measured.</p>
+      <p class="small bio"> <b>Skills Utilized: </b></p>
+      <a class="tables">
+        <ul>
+          <li>Inventor</li>
+          <li>Circuitry</li>
+          <li>Material Properties</li>
+        </ul>
+      </a>
+      <!-- <a href="{{ page.sitelink }}" class="small bio">Click here to check out the Code!</a> -->
+    </div>
+  </div>
+  <hr>
+
+  <h4>Overview</h4>
+  <p class="tab">The goal of this project was to create a scale utilizing an Arduino to measure and record different thrust and weight values applied. By knowing the material the force is applied upon, strain gauges can be utilized to measure the deflection in the beam. Strain gauges allow for the interface between the analog and digital world by utilizing a flexible housing which varies the resistance as the material is deflected. The small changes in resistance can be measured by an Arduino and can be converted into applied force.</p>
+
+  <h2>Arduino vs DAQ</h2>
+  <p class="tab">Both devices have the capability of reading in the resistance measurement and converting the value to a force. There is a major difference between these devices for their measurement capabilities. The Arduino Uno's analog pins are limited to 10 bits resulting in a total of 1024 output bins. A DAQ often has a 32-bit system leading for over 4 billion output bins. This results in a much finer resolution for the DAQ but these devices are much more expensive than an Arduino Uno. To avoid this drastic decrease in precision between the devices, a Hx711 Load Cell Amplifier increases the precision to approximately 16.7 million bins. Although this is not nearly as precise as a DAQ, the weights associated with the light-weight scale should make the precision of the Hx711 good enough.</p>
+
+  <h2>Theory and Schematic</h2>
+  <p class="tab">Strain gauges are a marvel for interfacing deflections in beams to an applied force. To maximize the potential of a strain gauge, these variable resistors are often used in pairs of two or four. They are used in a Wheatstone Bridge configuration in pairs of two or four. With a four-strain gauge configuration, two gauges are used to measure deflections of each axis of the material. With two gauges on each axis, the pair can cancel out errors due to environmental influences. A Wheatstone Bridge full with four strain gauges can be seen in the following.</p>
+  <img src="{{ site.url }}/assets/files/projects/Scale/Wheatstone.png" style="width:50%; height:auto;">
+
+  <p class="tab">Overall the scale utilizes an Arduino Uno, strain gauges, and the Hx711. A 16x2 LCD screen with some buttons can be added to the circuit to allow the user to record and read forces. Using Fritzing, I created a schematic to do this with the various components previously mentioned.</p>
+  <img src="{{ site.url }}/assets/files/projects/Scale/Schematic.png" style="width:80%; height:auto;">
+
+  <h2>Aluminum Extrusion vs Load cell</h2>
+  <p class="tabMid"> Instead of using a premade load cell, a thin piece of aluminum extrusion can be used. Four strain gauges can be applied with glue, two sets perpendicular to each other. By using the stress-strain relationship, different calibrated weights can be applied to calibrate the device. Afterward, resistance values measured from the strain gauges can be converted into force measurements via a constant multiplying factor.</p>
+  <p class="tabMid"> I utilized this technique in a course to acquire force measurements from a Wheatstone Bridge configuration of strain gauges. The resistance values were measured into a 32-bit DAQ and a program written with LABVIEW displayed the force values realtime. For a personal project and having no way to machine metal, I decided that using a load cell was the easiest. Therefore, the design stands utilizing a load cell with pre-applied strain gauges.</p>
+
+  <h4>Model</h4>
+  <p class="tabMid">The housing itself was modeled in Autodesk Inventor which features a standard 5kg load cell. The design was made to be modular and hold the various components such as an LCD screen.</p>
+
+  <div class="gallery">
+    <img class="lb-js low" data-type="image" src="{{ site.url }}/assets/files/projects/Scale/Scale_Img1.png">
+    <img class="lb-js low" data-type="image" src="{{ site.url }}/assets/files/projects/Scale/Scale_Img2.png">
+  </div>
+
+  <h4>Conclusion</h4>
+  <p class="tab">The design uses four posts with an m5 bolt runs through and screws into the bottom feet. The platform where the load is applied is also made of aluminum to prevent any warping wood has. Additionally, a notch is cut out on the bottom to allow a method of fastening a load to the platform without having it slide. The two platforms are made of wood which frames the device in as well as holds the electronics. The load cell itself can be swapped out to accommodate different measurement ranges. Although there are load cells that can measure hundreds of kilograms, this device can support light-weight measurements due to the wood as well as the Hx711's precision.</p>
+
+  <div class="spacer"></div>
+</div>

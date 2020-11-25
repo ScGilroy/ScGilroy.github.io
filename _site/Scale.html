@@ -1,0 +1,171 @@
+<!doctype html>
+<html prefix="og: http://ogp.me/ns#">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta property="og:title" content="Scott Gilroy Personal Website" />
+  <meta property="og:type" content="Portfolio" />
+  <meta property="og:image" content="https://ScGilroy.github.io/assets/files/home/background/Scott.jpg" />
+
+
+
+
+  <meta name="description" content="Homepage">
+  <!-- <meta name="image" property="og:image" content="https://ScGilroy.github.io/asseats/files/home/background/Berkeley.jpg"> -->
+  <!-- <meta name="author" content="Scott Gilroy"> -->
+
+  <title>Scott Gilroy</title>
+  <!-- Favicon-->
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+  <!-- Font Awesome icons (free version)-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css" crossorigin="anonymous">
+  <!-- Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+  <!-- Third party plugin CSS-->
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" /> -->
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link href="assets/css/creative.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Scott Gilroy | Homepage</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Scott Gilroy" />
+<meta name="author" content="Copyright Scott Gilroy" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Homepage" />
+<meta property="og:description" content="Homepage" />
+<link rel="canonical" href="http://localhost:4000/Scale.html" />
+<meta property="og:url" content="http://localhost:4000/Scale.html" />
+<meta property="og:site_name" content="Scott Gilroy" />
+<script type="application/ld+json">
+{"@type":"WebPage","description":"Homepage","author":{"@type":"Person","name":"Copyright Scott Gilroy"},"headline":"Scott Gilroy","url":"http://localhost:4000/Scale.html","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body id="page-top" class="">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand js-scroll-trigger" href="/#page-top">Scott Gilroy</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto my-2 my-lg-0">
+        
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#about">About Me</a>
+          </li>
+        
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#projects">Projects</a>
+          </li>
+        
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/Resume.html">Resume</a>
+          </li>
+        
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#contact">Contact</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <div class="bg-project">
+<!-- <header class="project-header-main" style="background-image:url('http://localhost:4000/assets/files/projects/Scale/Banner.png"> -->
+<header class="project-header-main" style="background-image:url( http://localhost:4000/assets/files/projects/Scale/Banner.png )">
+  <div class="bg-port"></div>
+  <div class="project-title-main">
+    <h1 class="project-title">Multipurpose Digital Scale for Weight and Thrust Measurements</h1>
+  </div>
+</header>
+<div class="projectContentWrapper">
+  <div class="overview">
+    <div class="main">
+      <p class="medium bio">Learning about strain gauges, I wanted to utilize this technology in a project. A digital scale that utilizes multiple strain gauges to measure beam deflection does this, and allows for weight and thrust to be measured.</p>
+      <p class="small bio"> <b>Skills Utilized: </b></p>
+      <a class="tables">
+        <ul>
+          <li>Inventor</li>
+          <li>Circuitry</li>
+          <li>Material Properties</li>
+        </ul>
+      </a>
+      <!-- <a href="https://github.com/ScGilroy/Chess-Sudoku-Solvers" class="small bio">Click here to check out the Code!</a> -->
+    </div>
+  </div>
+  <hr>
+
+  <h4>Overview</h4>
+  <p class="tab">The goal of this project was to create a scale utilizing an Arduino to measure and record different thrust and weight values applied. By knowing the material the force is applied upon, strain gauges can be utilized to measure the deflection in the beam. Strain gauges allow for the interface between the analog and digital world by utilizing a flexible housing which varies the resistance as the material is deflected. The small changes in resistance can be measured by an Arduino and can be converted into applied force.</p>
+
+  <h2>Arduino vs DAQ</h2>
+  <p class="tab">Both devices have the capability of reading in the resistance measurement and converting the value to a force. There is a major difference between these devices for their measurement capabilities. The Arduino Uno's analog pins are limited to 10 bits resulting in a total of 1024 output bins. A DAQ often has a 32-bit system leading for over 4 billion output bins. This results in a much finer resolution for the DAQ but these devices are much more expensive than an Arduino Uno. To avoid this drastic decrease in precision between the devices, a Hx711 Load Cell Amplifier increases the precision to approximately 16.7 million bins. Although this is not nearly as precise as a DAQ, the weights associated with the light-weight scale should make the precision of the Hx711 good enough.</p>
+
+  <h2>Theory and Schematic</h2>
+  <p class="tab">Strain gauges are a marvel for interfacing deflections in beams to an applied force. To maximize the potential of a strain gauge, these variable resistors are often used in pairs of two or four. They are used in a Wheatstone Bridge configuration in pairs of two or four. With a four-strain gauge configuration, two gauges are used to measure deflections of each axis of the material. With two gauges on each axis, the pair can cancel out errors due to environmental influences. A Wheatstone Bridge full with four strain gauges can be seen in the following.</p>
+  <img src="http://localhost:4000/assets/files/projects/Scale/Wheatstone.png" style="width:50%; height:auto;">
+
+  <p class="tab">Overall the scale utilizes an Arduino Uno, strain gauges, and the Hx711. A 16x2 LCD screen with some buttons can be added to the circuit to allow the user to record and read forces. Using Fritzing, I created a schematic to do this with the various components previously mentioned.</p>
+  <img src="http://localhost:4000/assets/files/projects/Scale/Schematic.png" style="width:80%; height:auto;">
+
+  <h2>Aluminum Extrusion vs Load cell</h2>
+  <p class="tabMid"> Instead of using a premade load cell, a thin piece of aluminum extrusion can be used. Four strain gauges can be applied with glue, two sets perpendicular to each other. By using the stress-strain relationship, different calibrated weights can be applied to calibrate the device. Afterward, resistance values measured from the strain gauges can be converted into force measurements via a constant multiplying factor.</p>
+  <p class="tabMid"> I utilized this technique in a course to acquire force measurements from a Wheatstone Bridge configuration of strain gauges. The resistance values were measured into a 32-bit DAQ and a program written with LABVIEW displayed the force values realtime. For a personal project and having no way to machine metal, I decided that using a load cell was the easiest. Therefore, the design stands utilizing a load cell with pre-applied strain gauges.</p>
+
+  <h4>Model</h4>
+  <p class="tabMid">The housing itself was modeled in Autodesk Inventor which features a standard 5kg load cell. The design was made to be modular and hold the various components such as an LCD screen.</p>
+
+  <div class="gallery">
+    <img class="lb-js low" data-type="image" src="http://localhost:4000/assets/files/projects/Scale/Scale_Img1.png">
+    <img class="lb-js low" data-type="image" src="http://localhost:4000/assets/files/projects/Scale/Scale_Img2.png">
+  </div>
+
+  <h4>Conclusion</h4>
+  <p class="tab">The design uses four posts with an m5 bolt runs through and screws into the bottom feet. The platform where the load is applied is also made of aluminum to prevent any warping wood has. Additionally, a notch is cut out on the bottom to allow a method of fastening a load to the platform without having it slide. The two platforms are made of wood which frames the device in as well as holds the electronics. The load cell itself can be swapped out to accommodate different measurement ranges. Although there are load cells that can measure hundreds of kilograms, this device can support light-weight measurements due to the wood as well as the Hx711's precision.</p>
+
+  <div class="spacer"></div>
+</div>
+
+
+</div>
+
+  <!-- no footer at all! -->
+<footer class="bg-white py-5">
+  <div class="container">
+    <div class="small text-center foot-color">
+      &copy; 2020 by Scott Gilroy
+      &nbsp;
+      
+    </div>
+  </div>
+</footer>
+
+
+  <!-- Bootstrap core JS-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+  <!-- Third party plugin JS-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script> -->
+  <!-- Core theme JS-->
+
+  <script src="assets/js/creative.min.js"></script>
+</body>
+
+</html>
