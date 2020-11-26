@@ -17,6 +17,11 @@ sections:
     section_id: projects
     background_style: bg-dark
     projects:
+      - title: State Estimator for a Vehicle
+        text: A Unscented Kalman Filter approach to state estimation given sensor data from an IMU and GPS.
+        icon: assets/files/projects/State_Estimation/Icon.gif
+        url: 'State_Estimation'
+
       - title: Futuristic Clock from the Odd Couple (1970s)
         text: Recreating one of the most unique clock designs to ever be displayed on television.
         icon: assets/files/projects/Odd_Couple_Clock/Icon.jpg

@@ -1,0 +1,171 @@
+<!doctype html>
+<html prefix="og: http://ogp.me/ns#">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta property="og:title" content="Scott Gilroy Personal Website" />
+  <meta property="og:type" content="Portfolio" />
+  <meta property="og:image" content="https://ScGilroy.github.io/assets/files/home/background/Scott.jpg" />
+
+
+
+
+  <meta name="description" content="Homepage">
+  <!-- <meta name="image" property="og:image" content="https://ScGilroy.github.io/asseats/files/home/background/Berkeley.jpg"> -->
+  <!-- <meta name="author" content="Scott Gilroy"> -->
+
+  <title>Scott Gilroy</title>
+  <!-- Favicon-->
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+  <!-- Font Awesome icons (free version)-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css" crossorigin="anonymous">
+  <!-- Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+  <!-- Third party plugin CSS-->
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" /> -->
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link href="assets/css/creative.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Scott Gilroy | Homepage</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Scott Gilroy" />
+<meta name="author" content="Copyright Scott Gilroy" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Homepage" />
+<meta property="og:description" content="Homepage" />
+<link rel="canonical" href="http://localhost:4000/State_Estimation.html" />
+<meta property="og:url" content="http://localhost:4000/State_Estimation.html" />
+<meta property="og:site_name" content="Scott Gilroy" />
+<script type="application/ld+json">
+{"@type":"WebPage","description":"Homepage","author":{"@type":"Person","name":"Copyright Scott Gilroy"},"headline":"Scott Gilroy","url":"http://localhost:4000/State_Estimation.html","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body id="page-top" class="">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand js-scroll-trigger" href="/#page-top">Scott Gilroy</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto my-2 my-lg-0">
+        
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#about">About Me</a>
+          </li>
+        
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#projects">Projects</a>
+          </li>
+        
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/Resume.html">Resume</a>
+          </li>
+        
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#contact">Contact</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <div class="bg-project">
+<!-- <header class="project-header-main" style="background-image:url('http://localhost:4000/assets/files/projects/State_Estimation/Banner.png"> -->
+<header class="project-header-main" style="background-image:url( http://localhost:4000/assets/files/projects/State_Estimation/Banner.png )">
+  <div class="bg-port"></div>
+  <div class="project-title-main">
+    <h1 class="project-title">State Estimator for a Vehicle</h1>
+  </div>
+</header>
+<div class="projectContentWrapper">
+  <div class="overview">
+    <div class="main">
+      <p class="medium bio">Utilize a state estimation algorithm for a complex system to accurately track the position and heading of a vehicle over time-based upon sensor measurements and dynamics.</p>
+      <p class="small bio"> <b>Skills Utilized: </b></p>
+      <a class="tables">
+        <ul>
+          <li>Python</li>
+          <li>State Estimation</li>
+          <li>Sensor Fusion</li>
+          <li>Unscented Kalman Filter</li>
+        </ul>
+      </a>
+      <!-- <a href="https://github.com/ScGilroy/Chess-Sudoku-Solvers" class="small bio">Click here to check out the Code!</a> -->
+    </div>
+  </div>
+  <hr>
+
+  <h4>Vehicle Model</h4>
+  <p class="tab">The model that is used is a simplified vehicle model which follows similarly towards a bicycle model. The vehicle exhibits nonlinear dynamics due to the dependency on sin, cos, and tan on the states (x, y, theta). An Euler discretization of the dynamics was performed to transform the dynamics from a continuous-time to discrete-time.</p>
+
+  <div class="gallery">
+    <img class="lb-js low" data-type="image" src="http://localhost:4000/assets/files/projects/State_Estimation/Model.png">
+    <img class="lb-js low" data-type="image" src="http://localhost:4000/assets/files/projects/State_Estimation/Dynamics.png">
+  </div>
+  <p class="Desc">Vehicle Model (Left), Dynamics and Measurement Equations (Right)</p>
+
+  <h4>Choice of State Estimator</h4>
+  <p class="tab">The state estimators heavily depend on the dynamics of the model in question. Since the dynamics of the vehicle model are nonlinear, the best options are the Unscented Kalman Filter, Extended Kalman Filter, and the Particle Filter. Because I wanted this to run within a reasonable time, the particle filter was removed from the list due to the algorithm needing a large number of particles to accurately represent the probability density function (PDF). The Unscented Kalman Filter was chosen due to the UKF being a midpoint between the Particle Filter and Extended Kalman Filter and potentially offers lower estimation error in comparison to the Extended Kalman Filter while being faster than the Particle Filter.</p>
+
+  <h4>Unscented Kalman Filter Overview</h4>
+  <p class="tab">The Unscented Kalman Filter (UKF) relies on sigma points which are generated according to the parameters such as the expected value and variance of the initial states. The sigma points are then pushed through the Euler discretized dynamics to get the predicted sigma points. The predicted sigma points are then passed through the position measurement equations to get the measurement sigma points. If a measurement is acquired, the Kalman filter gain is computed and the next predicted value is computed. If there is no measurement, the calculated predicted value becomes the next measurement value.</p>
+
+  <h4>Design Decisions</h4>
+  <p class="tab">The Unscented Kalman Filter consists of multiple design decisions mostly from determining the process and sensor variances, V, and W. Given a sample data set, these values were tuned. I had given the process noise weights on the order of 0.01-0.001 which shows a large trust in the model's dynamics. The sensor variance was higher which also confirmed the lower trust in the sensor's data in comparison to the model's dynamics.</p>
+
+  <h4>Results</h4>
+  <p class="tab">Overall, the vehicle followed the general path laid out by the acquired data from the IMU and GPS sensors. This can be seen from the sensor data points (red X's) in comparison to the estimated trajectory displayed by the blue line in the various runs displayed. The final state of the vehicle had less than 1 meter of error for all test cases which is expected for using a simplified model.</p>
+
+  <div class="gallery">
+    <img class="lb-js low" data-type="image" src="http://localhost:4000/assets/files/projects/State_Estimation/Run_00.png">
+    <img class="lb-js low" data-type="image" src="http://localhost:4000/assets/files/projects/State_Estimation/Run_01.png">
+  </div>
+  <p class="Desc">Run 0 (Left) | Run 1 (Right)</p>
+
+  <div class="spacer"></div>
+</div>
+
+
+</div>
+
+  <!-- no footer at all! -->
+<footer class="bg-white py-5">
+  <div class="container">
+    <div class="small text-center foot-color">
+      &copy; 2020 by Scott Gilroy
+      &nbsp;
+      
+    </div>
+  </div>
+</footer>
+
+
+  <!-- Bootstrap core JS-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+  <!-- Third party plugin JS-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script> -->
+  <!-- Core theme JS-->
+
+  <script src="assets/js/creative.min.js"></script>
+</body>
+
+</html>
