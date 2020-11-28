@@ -17,6 +17,11 @@ sections:
     section_id: projects
     background_style: bg-dark
     projects:
+      - title: Forward Jumping with the MIT Mini Cheetah
+        text: Development of a novel forward jumping optimization to improve the MIT Mini Cheetah's jumping capabilities of jumping through obstacles.
+        icon: assets/files/projects/Forward_Jump/Icon.gif
+        url: 'Forward_Jump'
+
       - title: State Estimator for a Vehicle
         text: A Unscented Kalman Filter approach to state estimation given sensor data from an IMU and GPS.
         icon: assets/files/projects/State_Estimation/Icon.gif
@@ -47,11 +52,7 @@ sections:
 
 
 
-#      - title: State Estimator for a Vehicle
-#        text: A Unscented Kalman Filter approach to state estimation given sensor data from an IMU and GPS.
-#        icon: State_Estimation_Icon.gif
-#        url: 'State_Estimation'
-#
+
 #      - title: Falcon 9 Model Predictive Controls
 #        text: MPC for Take off and Landing of a SpaceX Falcon 9 Rocket.
 #        icon: Rocket_MPC_Icon.gif
