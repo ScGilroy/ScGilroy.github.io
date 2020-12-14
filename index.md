@@ -22,11 +22,16 @@ sections:
         icon: assets/files/projects/Forward_Jump/Icon.gif
         url: 'Forward_Jump'
 
+      - title: Contact-Force Based Control for a Bipedal Robot, Cassie
+        text: Develop a balancing controller to stabilize a bipedal robot with additional perturbations.
+        icon: assets/files/projects/Balance/Icon.gif
+        url: 'Balance'
+
       - title: State Estimator for a Vehicle
         text: A Unscented Kalman Filter approach to state estimation given sensor data from an IMU and GPS.
         icon: assets/files/projects/State_Estimation/Icon.gif
         url: 'State_Estimation'
-        
+
       - title: Falcon 9 Model Predictive Controls
         text: Model Predictive Controller for Taking off and Landing of a SpaceX Falcon 9 Rocket.
         icon: assets/files/projects/Rocket_MPC/Icon.gif
@@ -59,11 +64,7 @@ sections:
 
 
 
-#
-#      - title: Forward Jumping with the MIT Mini Cheetah
-#        text: My Capstone Project on developing a novel jumping feature for the MIT Mini Cheetah.
-#        icon: Forward_Jump_Icon.gif
-#        url: 'Forward_Jump'
+
 #
 #      - title: Astrophotography x 3D Printing
 #        text: Adapter developed to attach a GoPro and iPhone to a telescope for photographing planets and moons.
