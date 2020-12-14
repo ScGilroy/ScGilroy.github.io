@@ -11,7 +11,7 @@ sections:
     section_id: about
     background_style: bg-about
     title: About Me
-    text: I am a recent Master's graduate from the University of California, Berkeley in which I studied Mechanical Engineering and focused on the concentration of Robotics and Controls. I performed my Master's thesis under the supervision of Dr. Koushil Sreenath on Jumping with the MIT Mini Cheetah through an obstacle. Previously I worked as an R&D Engineer at Air Techniques on their dental imaging department which gathered experience with design verification, prototyping and product improvements.  <br> <br> Currently in my free time, I continue to work towards advancing my previous algorithm which was developed for my Master's thesis. Additionally, I am very passionate about continuing my learning and further refining my skills which I often find myself working on new projects or learning through online courses. <br> <br> I am a space enthusiast where I enjoy looking and photographing planets and I love to travel, exploring new places and locations throughout the United States and Canada.
+    text: I am a recent Master's graduate from the University of California, Berkeley in which I studied Mechanical Engineering and focused on the concentration of Robotics and Controls. I performed my Master's thesis under the supervision of Dr. Koushil Sreenath on Jumping with the MIT Mini Cheetah through an obstacle. Previously I worked as an R&D Engineer at Air Techniques in their dental imaging department which gathered experience with design verification, prototyping, and product improvements. <br> <br> Currently, in my free time, I continue to work towards advancing my previous algorithm which was developed for my Master's thesis. Additionally, I am very passionate about continuing my learning and further refining my skills which I often find myself working on new projects or learning through online courses. <br> <br> I am a space enthusiast where I enjoy looking and photographing planets and I love to work on new and exotic projects of all different engineering sectors.
 
   - type: proj.html
     section_id: projects
@@ -26,6 +26,11 @@ sections:
         text: A Unscented Kalman Filter approach to state estimation given sensor data from an IMU and GPS.
         icon: assets/files/projects/State_Estimation/Icon.gif
         url: 'State_Estimation'
+        
+      - title: Falcon 9 Model Predictive Controls
+        text: Model Predictive Controller for Taking off and Landing of a SpaceX Falcon 9 Rocket.
+        icon: assets/files/projects/Rocket_MPC/Icon.gif
+        url: 'Rocket_MPC'
 
       - title: Futuristic Clock from the Odd Couple (1970s)
         text: Recreating one of the most unique clock designs to ever be displayed on television.
@@ -53,10 +58,7 @@ sections:
 
 
 
-#      - title: Falcon 9 Model Predictive Controls
-#        text: MPC for Take off and Landing of a SpaceX Falcon 9 Rocket.
-#        icon: Rocket_MPC_Icon.gif
-#        url: 'Rocket_MPC'
+
 #
 #      - title: Forward Jumping with the MIT Mini Cheetah
 #        text: My Capstone Project on developing a novel jumping feature for the MIT Mini Cheetah.
