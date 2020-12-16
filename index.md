@@ -37,6 +37,11 @@ sections:
         icon: assets/files/projects/Rocket_MPC/Icon.gif
         url: 'Rocket_MPC'
 
+      - title: Astrophotography x 3D Printing
+        text: Adapter developed to attach a GoPro and iPhone 8 Plus to a telescope for photographing planets and moons.
+        icon: assets/files/projects/Astrophotography/Icon.jpg
+        url: 'Astrophotography'
+
       - title: Futuristic Clock from the Odd Couple (1970s)
         text: Recreating one of the most unique clock designs to ever be displayed on television.
         icon: assets/files/projects/Odd_Couple_Clock/Icon.jpg
@@ -63,19 +68,6 @@ sections:
 
 
 
-
-
-#
-#      - title: Astrophotography x 3D Printing
-#        text: Adapter developed to attach a GoPro and iPhone to a telescope for photographing planets and moons.
-#        icon: Astrophotography_Icon.jpg
-#        url: 'Astrophotography'
-#
-#      - title: Contact-Force Based Control for a Bipedal Robot, Cassie
-#        text: Develop a balancing controller to stabilize a bipedal robot with additional perturbations.
-#        icon: Balance_Icon.gif
-#        url: 'Balance'
-#
 #      - title: Portable A/C and Beverage Cooler
 #        text: Design of an portable beverage and A/C unit with utilizes ice water to cool off a small enclosed environment.
 #        icon: Cooler_Icon.png
@@ -85,11 +77,6 @@ sections:
 #        text: Ease wheelchair users by altering how a wheelchair is operated.
 #        icon: Wheelchair_Icon.gif
 #        url: 'Wheelchair'
-#
-#      - title: Light-Weight Digital Scale
-#        text: A scale designed to measure weight and thrust measurements with data acquisition.
-#        icon: Scale_Icon.png
-#        url: 'Scale'
 #
 #      - title: Pick-and-Place with a Baxter Robotic Arm
 #        text: Inverse kinematic and jacobian motion planning approach for a pick-and-place problem with a Baxter robotic arm.
