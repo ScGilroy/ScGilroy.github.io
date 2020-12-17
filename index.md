@@ -62,7 +62,10 @@ sections:
         icon: assets/files/projects/Scale/Icon.png
         url: 'Scale'
 
-
+      - title: Portable A/C and Beverage Cooler
+        text: Design of a portable beverage and A/C unit which utilizes ice water to cool off a small enclosed environment.
+        icon: assets/files/projects/Cooler/Icon.png
+        url: 'Cooler'
 
 
 
