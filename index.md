@@ -2,7 +2,7 @@
 layout: home
 header:
   title: Hi, I'm Scott!
-  text: Control Engineer with a Passion in Robotics and Autonomous Systems
+  text: An Engineer with a Passion in Robotics and Autonomous Systems
   school: University of California, Berkeley - M.Eng  M.E. '20
 
 
@@ -11,7 +11,7 @@ sections:
     section_id: about
     background_style: bg-about
     title: About Me
-    text: I am a recent Master's graduate from the University of California, Berkeley in which I studied Mechanical Engineering and focused on the concentration of Robotics and Controls. I performed my Master's thesis under the supervision of Dr. Koushil Sreenath on Jumping with the MIT Mini Cheetah through an obstacle. Previously I worked as an R&D Engineer at Air Techniques in their dental imaging department which gathered experience with design verification, prototyping, and product improvements. <br> <br> Currently, in my free time, I continue to work towards advancing my previous algorithm which was developed for my Master's thesis. Additionally, I am very passionate about continuing my learning and further refining my skills which I often find myself working on new projects or learning through online courses. <br> <br> I am a space enthusiast where I enjoy looking and photographing planets and I love to work on new and exotic projects of all different engineering sectors.
+    text: I am a recent Master's graduate from the University of California, Berkeley in which I studied Mechanical Engineering and focused on the concentration of Robotics and Controls. I performed my Master's thesis under the supervision of Dr. Koushil Sreenath on Jumping with the MIT Mini Cheetah through an obstacle. Previously I worked as an R&D Engineer at Air Techniques in their dental imaging department which gathered experience with design verification, prototyping, and product improvements. <br> <br> Currently, in my free time, I continue to work towards finishing personal projects and advancing my previous algorithm which was developed for my Master's thesis. I am very passionate about continuing my learning and further refining my skill set.
 
   - type: proj.html
     section_id: projects
@@ -63,24 +63,20 @@ sections:
         url: 'Scale'
 
       - title: Portable A/C and Beverage Cooler
-        text: Design of a portable beverage and A/C unit which utilizes ice water to cool off a small enclosed environment.
+        text: Design of a portable beverage cooler and A/C unit which uses ice-water to cool off a small enclosed environment.
         icon: assets/files/projects/Cooler/Icon.png
         url: 'Cooler'
 
+      - title: Wheelchair Mobility Improvement
+        text: Ease wheelchair users by altering how a wheelchair is operated.
+        icon: Wheelchair_Icon.gif
+        url: 'Wheelchair'
 
 
 
 
-#      - title: Portable A/C and Beverage Cooler
-#        text: Design of an portable beverage and A/C unit with utilizes ice water to cool off a small enclosed environment.
-#        icon: Cooler_Icon.png
-#        url: 'Cooler'
-#
-#      - title: Wheelchair Mobility Improvement
-#        text: Ease wheelchair users by altering how a wheelchair is operated.
-#        icon: Wheelchair_Icon.gif
-#        url: 'Wheelchair'
-#
+
+
 #      - title: Pick-and-Place with a Baxter Robotic Arm
 #        text: Inverse kinematic and jacobian motion planning approach for a pick-and-place problem with a Baxter robotic arm.
 #        icon: IK_Baxter_Icon.png
@@ -109,7 +105,7 @@ sections:
     - title: LinkedIn
       icon: fa-linkedin-in
       icon_type: fab
-      url: 'https://linkedin.com/in/scott-g-793354143/'
+      url: 'https://linkedin.com/in/scott-gilroy-793354143/'
 
     - title: E-Mail
       icon: fa-envelope
