@@ -38,7 +38,7 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
   <![endif]-->
-<!-- Begin Jekyll SEO tag v2.6.1 -->
+<!-- Begin Jekyll SEO tag v2.7.1 -->
 <title>Scott Gilroy | Homepage</title>
 <meta name="generator" content="Jekyll v3.9.0" />
 <meta property="og:title" content="Scott Gilroy" />
@@ -49,8 +49,10 @@
 <link rel="canonical" href="http://localhost:4000/Rocket_MPC.html" />
 <meta property="og:url" content="http://localhost:4000/Rocket_MPC.html" />
 <meta property="og:site_name" content="Scott Gilroy" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Scott Gilroy" />
 <script type="application/ld+json">
-{"@type":"WebPage","description":"Homepage","author":{"@type":"Person","name":"Copyright Scott Gilroy"},"headline":"Scott Gilroy","url":"http://localhost:4000/Rocket_MPC.html","@context":"https://schema.org"}</script>
+{"headline":"Scott Gilroy","url":"http://localhost:4000/Rocket_MPC.html","@type":"WebPage","author":{"@type":"Person","name":"Copyright Scott Gilroy"},"description":"Homepage","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -114,12 +116,12 @@
   <hr>
   <h4>Project Motivation</h4>
   <p class="tab">I was lucky enough to have been in Florida near Cape CanaveralStarting from the same Initial Conditions, each model was run until an optimal solution was found and the thrust values were compared. The thrust for the first case, landing without grid fins led to a thrust value to be consistently above the minimum allowed while cases 2 and 3 utilized the grid fins with the minimum thrust to slow the rocket down, then right before landing the thrusters turned on further limiting the rocket's speed for a safe landin at the time of a SpaceX Rocket launch which was destined to resupply the International Space Station. I was able to see through the rocket split just as it went behind the clouds. Additionally, I took a course at Berkeley on Model Predictive Control (ME 231a) which allowed me to develop an optimal control problem to land a rocket with and without grid fins. Between both of these, I decided to develop a Rocket Landing MPC.</p>
-  <img src="http://localhost:4000/assets/files/projects/Rocket_MPC/SpaceX_Launch.gif" style="width:500px; height:auto;">
+  <img src="http://localhost:4000/assets/files/projects/Rocket_MPC/SpaceX_Launch.gif" style="width:50%; height:auto;">
   <p class="Desc">SpaceX Falcon 9 Rocket Heading Towards the International Space Station (May 4th, 2019).</p>
 
   <h4>Rocket Model</h4>
   <p class="tab">The rocket is a planar model with some assumptions to reduce the overall nonlinear nature of the dynamics. Being planar, the states associated with the model are (x, y, theta, dx, dy, dtheta) which account for the position, heading and velocities of the rocket. The model and dynamics are defined as the following: </p>
-  <img src="http://localhost:4000/assets/files/projects/Rocket_MPC/Rocket_Model.png" style="width:500px; height:auto;">
+  <img src="http://localhost:4000/assets/files/projects/Rocket_MPC/Rocket_Model.png" style="width:50%; height:auto;">
   <p class="Desc">Rocket Model used (Grid Fins not Present).</p>
 
   <h4>Take Off MPC</h4>
@@ -128,7 +130,7 @@
   <h2>Assumptions</h2>
   <p  class="tab">Using the small-angle approximation for the gimbaled thrusters allows the dynamics to reduce some nonlinearities which will aid in the optimization. The dynamics are still nonlinear due to the rocket orientation's impact on the x and y dynamics. Additionally, we use the assumption that the mass remains constant throughout the duration of the take-off and landing.</p>
 
-  <img src="http://localhost:4000/assets/files/projects/Rocket_MPC/Take_Off.gif" style="width:400px; height:auto;">
+  <img src="http://localhost:4000/assets/files/projects/Rocket_MPC/Take_Off.gif" style="width:35%; height:auto;">
   <p class="Desc">Optimal Solution to Launch the Rocket to (-100m, 1750m, 0 rad) with no velocities in 30s.</p>
 
   <h2>Take Off Results</h2>
