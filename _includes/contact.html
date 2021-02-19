@@ -13,7 +13,7 @@
         {% for action in section.actions %}
         {% assign fa = action.icon_type | default: "fas" %}
         <div class="cont-width text-center">
-            <a href='{{ action.url }}'> <i class="{{ fa }} {{ action.icon }} fa-2x text-white test"></i></a>
+            <a href='{{ action.url }}'> <i class="{{ fa }} {{ action.icon }} icon-size text-white"></i></a>
         </div>
         {% endfor %}
       </div>

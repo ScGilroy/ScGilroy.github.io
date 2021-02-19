@@ -104,12 +104,12 @@ abbr[data-original-title] {
 }
 
 a {
-  color: #f4623a;
+  color: #000000;
   text-decoration: none;
   background-color: transparent;
 }
 a:hover {
-  color: #d6370c;
+  color: #000000;
   text-decoration: underline;
 }
 
@@ -10926,9 +10926,10 @@ hr.divider-contact {
 }
 
 .contact-img {
-  width: 35%;
+  width: 60%;
   min-width: 200px;
   height: auto;
+  align-items: center;
   margin-bottom: 1rem;
   border: 2px solid rgba(0, 0, 0, 0.4);
 }
@@ -10939,18 +10940,20 @@ hr.divider-contact {
   margin-left: auto;
   margin-right: auto;
   background-color: rgba(0, 0, 0, 0.5);
-  width: 50%;
-  height: auto;
+  width: 35vw;
+  min-width: 250px;
+  // height: auto;
   border: 3px solid rgba(0, 0, 0, 0.6);
   border-radius: 10px;
-  // padding-left: 10%;
-  // padding-right: 10%;
+  // padding-left: 2vw;
+  // padding-right: 2vw;
   padding-bottom: 1%;
 }
 
 
 .cont-width {
-    width: 18%;
+    width: 20%;
+    min-width: 60px;
 }
 
 .cont-mar-top {
@@ -10985,6 +10988,6 @@ hr.cont {
   color: #222222;
 }
 
-.test {
-  // margin: 0;
+.icon-size {
+  font-size: 5vh;
 }
