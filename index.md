@@ -69,7 +69,7 @@ sections:
 
       - title: Wheelchair Mobility Improvement
         text: Ease wheelchair users by altering how a wheelchair is operated.
-        icon: Wheelchair_Icon.gif
+        icon: assets/files/projects/Wheelchair_Icon.gif
         url: 'Wheelchair'
 
 
