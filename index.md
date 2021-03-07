@@ -20,57 +20,57 @@ sections:
       - title: Forward Jumping with the MIT Mini Cheetah
         text: Development of a novel forward jumping optimization to improve the MIT Mini Cheetah's jumping capabilities of jumping through obstacles.
         icon: assets/files/projects/Forward_Jump/Icon.gif
-        url: 'Forward_Jump'
+        url: 'pages/Forward_Jump'
 
       - title: Contact-Force Based Control for a Bipedal Robot, Cassie
         text: Develop a balancing controller to stabilize a bipedal robot with additional perturbations.
         icon: assets/files/projects/Balance/Icon.gif
-        url: 'Balance'
+        url: 'pages/Balance'
 
       - title: State Estimator for a Vehicle
         text: A Unscented Kalman Filter approach to state estimation given sensor data from an IMU and GPS.
         icon: assets/files/projects/State_Estimation/Icon.gif
-        url: 'State_Estimation'
+        url: 'pages/State_Estimation'
 
       - title: Falcon 9 Model Predictive Controls
         text: Model Predictive Controller for Taking off and Landing of a SpaceX Falcon 9 Rocket.
         icon: assets/files/projects/Rocket_MPC/Icon.gif
-        url: 'Rocket_MPC'
+        url: 'pages/Rocket_MPC'
 
       - title: Astrophotography x 3D Printing
         text: Adapter developed to attach a GoPro and iPhone 8 Plus to a telescope for photographing planets and moons.
         icon: assets/files/projects/Astrophotography/Icon.jpg
-        url: 'Astrophotography'
+        url: 'pages/Astrophotography'
 
       - title: Futuristic Clock from the Odd Couple (1970s)
         text: Recreating one of the most unique clock designs to ever be displayed on television.
         icon: assets/files/projects/Odd_Couple_Clock/Icon.jpg
-        url: 'Odd_Couple_Clock'
+        url: 'pages/Odd_Couple_Clock'
 
       - title: Workbench with Additional Storage
         text: Workbench to stay organized and provide a great place to work on hardware-based projects.
         icon: assets/files/projects/Workbench/Icon.jpg
-        url: 'Workbench'
+        url: 'pages/Workbench'
 
       - title: Sudoku Solvers
         text: Solver for Classic, Anti-King, Anti-Queen, and Anti-Knight Sudoku puzzles.
         icon: assets/files/projects/Sudoku/Icon.png
-        url: 'Sudoku'
+        url: 'pages/Sudoku'
 
       - title: Multipurpose Digital Scale
         text: A scale designed to measure both weight and thrust with data acquisition.
         icon: assets/files/projects/Scale/Icon.png
-        url: 'Scale'
+        url: 'pages/Scale'
 
       - title: Portable A/C and Beverage Cooler
         text: Design of a portable beverage cooler and A/C unit which uses ice-water to cool off a small enclosed environment.
         icon: assets/files/projects/Cooler/Icon.png
-        url: 'Cooler'
+        url: 'pages/Cooler'
 
       - title: Wheelchair Mobility Improvement
         text: Ease wheelchair users by altering how a wheelchair is operated.
         icon: assets/files/projects/Wheelchair_Icon.gif
-        url: 'Wheelchair'
+        url: 'pages/Wheelchair'
 
 
 
