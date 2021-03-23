@@ -17,8 +17,8 @@ sections:
     section_id: projects
     background_style: bg-dark
     projects:
-      - title: Forward Jumping with the MIT Mini Cheetah
-        text: Development of a novel forward jumping optimization to improve the MIT Mini Cheetah's jumping capabilities of jumping through obstacles.
+      - title: Forward Jumping with a Quadrupedal Robot
+        text: Development of a novel forward jumping optimization to perform jumps over obstacles with quadruped robots.
         icon: assets/files/projects/Forward_Jump/Icon.gif
         url: 'pages/Forward_Jump'
 
