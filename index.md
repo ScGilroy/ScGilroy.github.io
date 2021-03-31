@@ -47,6 +47,11 @@ sections:
         icon: assets/files/projects/Solar_System/Icon.gif
         url: 'pages/Solar_System'
 
+      - title: Pick-and-Place with a Baxter Robotic Arm
+        text: Inverse kinematic and jacobian motion planning approach for a pick-and-place problem with a Baxter robotic arm.
+        icon: assets/files/projects/IK_Baxter/Icon.png
+        url: 'pages/IK_Baxter'
+
       - title: Futuristic Clock from the Odd Couple (1970s)
         text: Recreating one of the most unique clock designs to ever be displayed on television.
         icon: assets/files/projects/Odd_Couple_Clock/Icon.jpg
@@ -82,13 +87,8 @@ sections:
 
 
 
-#      - title: Pick-and-Place with a Baxter Robotic Arm
-#        text: Inverse kinematic and jacobian motion planning approach for a pick-and-place problem with a Baxter robotic arm.
-#        icon: IK_Baxter_Icon.png
-#        url: 'IK_Baxter'
-#
 
-#
+
 #      - title: Self Driving Car using CARLA
 #        text: Cousera Course Project which addressed most aspects in implementing a Self Driving Algorithm.
 #        icon: CARLA_Icon.png

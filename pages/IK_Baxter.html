@@ -1,0 +1,46 @@
+---
+layout: project-layout
+project_title: Pick-and-Place with a Baxter Robotic Arm
+sitelink:
+featImg: /assets/files/projects/IK_Baxter/Banner.png
+---
+
+
+<div class="projectContentWrapper">
+  <div class="overview">
+    <div class="main">
+      <p class="medium bio">TThe Baxter Robot is a two-armed robot each of which has seven degrees of freedom and a wide range of motion. After learning about Inverse Kinematic and jacobian-based Motion Planning, I wanted to attempt recreating this algorithm to work for a pick-and-place task.</p>
+      <p class="small bio"> <b>Skills Utilized: </b></p>
+      <a class="tables">
+        <ul>
+          <li>MATLAB</li>
+          <li>Inverse Kinematics</li>
+          <li>Jacobian based Motion Planning</li>
+          <li>Robotic Manipulator</li>
+        </ul>
+      </a>
+    </div>
+  </div>
+  <hr>
+  <h4>Baxter Robotic Arm</h4>
+  <p class="tab">The Baxter Robotic Arm is a seven degree of freedom manipulator which operates in 3D space where each degree of freedom corresponds to a joint. Using these seven joints, the arm can research many desired end-effector positions from various joint angle configurations. Each joint has a specific maximum and minimum angle, none of which can fully rotate 360 degrees. With these limitations, I wanted to code an algorithm that allows for the successful completion of a pick-and-place task. The pick-and-place task this will discuss focuses only on a single arm of the robot.</p>
+
+  <img src="{{ site.url }}/assets/files/projects/IK_Baxter/Joints.png" style="width:40%; height:auto;">
+
+  <h4>Inverse Kinematic and Jacobian based Motion Planning</h4>
+  <p class="tab">Inverse Kinematic and Jacobian-based motion planning is a type of motion planning which does not use any optimization when finding the optimal path. This method uses interpolation in SE(3) to form a trajectory for the end effector. By being given an initial and final configuration in SE(3) we can interpolate the position of the end effector. This method utilizes dual quaternion since they prevent singularities unlike when using Euclidean angles. Using the various mathematical operations which quaternions and dual quaternions follow, we can formulate the Baxter robotic arm to move to desired key trajectory points.</p>
+
+  <h2>Algorithm</h2>
+  <p class="tab">Given a final position and rotation, the adjoint matrix can be formulated and a dual quaternion representation can be calculated. Afterward, dual quaternion interpolation is performed between the initial and final dual quaternions with an interpolation parameter tau, which obtains the next configuration. Afterward, a 7x1 vector can be found for each timestep which provides the end effectors position and unit quaternion in SE(3). By using Jacobian-based Motion Planning, the joint angles for the robotic arm can be computed. Forward kinematics can be then used to convert these joint angles into an Adjoint representation of the robotic arm's end effector's frame in the global frame. This algorithm can be continuously run until the position and rotation between the current end-effector frame and desired frame are within tolerance. This can be applied to go between multiple key positions.</p>
+
+  <h4>Results</h4>
+  <p class="tab">The previously described algorithm was implemented in MATLAB which outputted the trajectory of the end effector's frame position in respect to the global frame. The robotic arm is located at the origin and the angles are defined strictly based upon the manufactures specifications. The task I imagined was a pick and place task in which the arm picks up an object slightly off the ground then moves it into a bin located on the left side of the arm. The arm was then to move back, completing the cycle. Overall, the algorithm works to an extent. Certain configurations provide infeasible solutions in which the arm does not exhibit a smooth trajectory.</p>
+
+  <img src="{{ site.url }}/assets/files/projects/IK_Baxter/Trajectory.gif" style="width:70%; height:auto;">
+  <p class="Desc">Position of the end effector of the left arm of the Baxter Robot which performs a repetitive pick-place-drop task (from right to left) in 3D space.</p>
+
+  <h4>Potential Other Work/Approach</h4>
+  <p class="tab">An optimization-based approach can be used which utilizes a Lagrangian approach. I have used this approach on other projects, mainly with the MIT Mini Cheetah, and it provides great results when done correctly. This approach can run in realtime on the robot's CPU but may run slower if a new trajectory were to be generated for each pick-and-place cycle. If a single trajectory were to be used, this method would provide higher speed since the controller would be a trajectory following P-D control based upon the joint angles and velocities outputted. I may attempt this approach in the future but I would need to know all the mass and inertial parameters for all the links since this approach is energy-based.</p>
+
+  <div class="spacer"></div>
+</div>
