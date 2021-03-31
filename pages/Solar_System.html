@@ -40,14 +40,16 @@ featImg: /assets/files/projects/Solar_System/Banner.png
   <p class="tab">The force-based approach is a much more complex approach and requires much longer computation times depending on the duration in which the solar system is simulated. The benefits of this method are that it allows a more accurate representation of the position of the object since all objects have a direct impact on the gravitational forces experienced. Additionally, moons can be modeled with the same equations of motion. To speed up runtime when animating the data, I have exported the position dataset to be reloaded into the animator. For this method to work, accurate velocity and initial position are required. I tuned these parameters slightly from the values provided by NASA. Additionally, this model only contains bodies with significant importance or size. This means that the asteroid belt is not modeled since it would exponentially increase computation time when simulating the model for many years. Overall, this method provided an accurate representation of over 25 planets and moons in the solar system.</p>
 
   <img src="{{ site.url }}/assets/files/projects/Solar_System/Dynamics_1.gif" style="width:80%; height:auto;">
-  <p class="centeredDesc noPad">Entire Solar System Simulation - Planets and Moons are simulated for 1e9 seconds.</p>
+  <p class="centeredDesc">Entire Solar System Simulation</p>
   <img src="{{ site.url }}/assets/files/projects/Solar_System/Dynamics_2.gif" style="width:80%; height:auto;">
-  <p class="centeredDesc noPad">Solar System zoomed into the Inner Planets</p>
+  <p class="centeredDesc">Solar System zoomed into the Inner Planets</p>
+
+  <p class="tab"> Planets and Moons were simulated for 971.3 years (took ~2 hours to generate 170 million data points) which is one complete orbit of the dwarf planet Eris. Data after one complete orbit of each planet was removed (to reduce storage size) and the data points for one orbit was saved. The simulation can then be played back with the data aquired.</p>
 
   <h4>Conclusion</h4>
   <p class="tab">This project was a large motivator for some of my other space-related projects. While the ellipse approach utilized geometry to speed through simulation, it lacked realism which can be associated with the laws of motion. The second approach used these laws of motion from Newton and Kepler and allowed for the Solar System to accurately model planets, moons, and other bodies very closely.</p>
 
   <h4>Future Work</h4>
-  <p class="tab">In the future, I plan to model rockets that will follow an optimized trajectory between planets, moons, or orbits with a simplified model of the solar system (to speed up the optimization process).</p>
+  <p class="tab">In the future, I plan to model rockets that will follow an optimized trajectory between planets, moons, or orbits with a simplified model of the solar system (to speed up the optimization process). Additionally, the simulator could directly take the current planetary position from NASA's website and simulate their orbit into the future instead of starting from an arbitrary position.</p>
   <div class="spacer"></div>
 </div>
