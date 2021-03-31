@@ -42,6 +42,11 @@ sections:
         icon: assets/files/projects/Astrophotography/Icon.jpg
         url: 'pages/Astrophotography'
 
+      - title: Modeling the Solar System via Kepler's Laws
+        text: Modeling the orbit of planets and moons in our solar system using two different methods.
+        icon: assets/files/projects/Solar_System/Icon.gif
+        url: 'pages/Solar_System'
+
       - title: Futuristic Clock from the Odd Couple (1970s)
         text: Recreating one of the most unique clock designs to ever be displayed on television.
         icon: assets/files/projects/Odd_Couple_Clock/Icon.jpg
@@ -57,11 +62,6 @@ sections:
         icon: assets/files/projects/Sudoku/Icon.png
         url: 'pages/Sudoku'
 
-      - title: Multipurpose Digital Scale
-        text: A scale designed to measure both weight and thrust with data acquisition.
-        icon: assets/files/projects/Scale/Icon.png
-        url: 'pages/Scale'
-
       - title: Portable A/C and Beverage Cooler
         text: Design of a portable beverage cooler and A/C unit which uses ice-water to cool off a small enclosed environment.
         icon: assets/files/projects/Cooler/Icon.png
@@ -71,6 +71,11 @@ sections:
         text: Ease wheelchair users by altering how a wheelchair is operated.
         icon: assets/files/projects/Wheelchair/Icon.gif
         url: 'pages/Wheelchair'
+
+      - title: Multipurpose Digital Scale
+        text: A scale designed to measure both weight and thrust with data acquisition.
+        icon: assets/files/projects/Scale/Icon.png
+        url: 'pages/Scale'
 
 
 
@@ -82,10 +87,7 @@ sections:
 #        icon: IK_Baxter_Icon.png
 #        url: 'IK_Baxter'
 #
-#      - title: Modeling of Orbits in the Solar System
-#        text: Modeling the orbit of planets and moons in our solar system using two different methods.
-#        icon: Solar_System_Icon.gif
-#        url: 'Solar_System'
+
 #
 #      - title: Self Driving Car using CARLA
 #        text: Cousera Course Project which addressed most aspects in implementing a Self Driving Algorithm.
