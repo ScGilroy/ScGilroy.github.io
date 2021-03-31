@@ -1,0 +1,53 @@
+---
+layout: project-layout
+project_title: Modeling the Solar System via Kepler's Laws
+sitelink:
+featImg: /assets/files/projects/Solar_System/Banner.png
+---
+
+
+<div class="projectContentWrapper">
+  <div class="overview">
+    <div class="main">
+      <p class="medium bio">After taking a course on the solar system by Mike Brown, I decided to model the solar system in a way in which I could see the interactions between the bodies over many years.</p>
+      <p class="small bio"> <b>Skills Utilized: </b></p>
+      <a class="tables">
+        <ul>
+          <li>MATLAB</li>
+          <li>Nonlinear Dynamics</li>
+          <li>Spatial Modeling</li>
+          <li></li>
+        </ul>
+      </a>
+      <!-- <a href="{{ page.sitelink }}" class="small bio">Click here to check out the Code!</a> -->
+    </div>
+  </div>
+  <hr>
+  <h4>Background</h4>
+  <p class="tab">The solar system, like many other natural occurrences, follows strict laws which have been discovered by past mathematicians. The main contributors to the physics behind the motion were Newton and Kepler. Between both of these mathematicians, one can accurately model how the planets orbit each other using forces.</p>
+
+  <h4>Terminology</h4>
+  <p class="tab">Orbital dynamics utilize terminology to define orbital parameters. The parameters which are used within the code are the object's mass, radius, and velocity as well as the orbits' inclination, eccentricity, aphelion, and perihelion. Most of these parameters are defined in the following image.</p>
+  <img src="{{ site.url }}/assets/files/projects/Solar_System/Terminology_img.png" style="width:70%; height:auto;">
+
+  <h4>Approaches</h4>
+  <h2>Ellipse Based Approach</h2>
+  <p class="tab">The orbits of planets generally take the shape of an ellipse in 3D space. How non-circular the obit is, depends on the eccentricity of the planet's ellipse. By using simple geometry with the planet's parameters, the orbit can be approximated. While this method gives a good approximation, it is nearly impossible to model the moons since they experience a sine wave-like orbit. Additionally, the orbits deviate over time due to the small disturbances of other planets in other positions in space. While this method has its drawbacks, the code runs very fast and many objects can be modeled and ran very quickly. I used this method as an introduction to modeling the planets in the solar system and to motivate me by seeing the potential outcome of using the force-based method. Overall this method featured all the planets and modeled the asteroid belt by using a normal distribution.</p>
+  <img src="{{ site.url }}/assets/files/projects/Solar_System/Ellipse.gif" style="width:80%; height:auto;">
+  <p class="centeredDesc">Ellipse Method - Time is sped up to show movements, planets and asteroids are enlarged to see.</p>
+
+  <h2>Forced Based Approach</h2>
+  <p class="tab">The force-based approach is a much more complex approach and requires much longer computation times depending on the duration in which the solar system is simulated. The benefits of this method are that it allows a more accurate representation of the position of the object since all objects have a direct impact on the gravitational forces experienced. Additionally, moons can be modeled with the same equations of motion. To speed up runtime when animating the data, I have exported the position dataset to be reloaded into the animator. For this method to work, accurate velocity and initial position are required. I tuned these parameters slightly from the values provided by NASA. Additionally, this model only contains bodies with significant importance or size. This means that the asteroid belt is not modeled since it would exponentially increase computation time when simulating the model for many years. Overall, this method provided an accurate representation of over 25 planets and moons in the solar system.</p>
+
+  <img src="{{ site.url }}/assets/files/projects/Solar_System/Dynamics_1.gif" style="width:80%; height:auto;">
+  <p class="centeredDesc noPad">Entire Solar System Simulation - Planets and Moons are simulated for 1e9 seconds.</p>
+  <img src="{{ site.url }}/assets/files/projects/Solar_System/Dynamics_2.gif" style="width:80%; height:auto;">
+  <p class="centeredDesc noPad">Solar System zoomed into the Inner Planets</p>
+
+  <h4>Conclusion</h4>
+  <p class="tab">This project was a large motivator for some of my other space-related projects. While the ellipse approach utilized geometry to speed through simulation, it lacked realism which can be associated with the laws of motion. The second approach used these laws of motion from Newton and Kepler and allowed for the Solar System to accurately model planets, moons, and other bodies very closely.</p>
+
+  <h4>Future Work</h4>
+  <p class="tab">In the future, I plan to model rockets that will follow an optimized trajectory between planets, moons, or orbits with a simplified model of the solar system (to speed up the optimization process).</p>
+  <div class="spacer"></div>
+</div>
