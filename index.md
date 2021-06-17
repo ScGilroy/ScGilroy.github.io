@@ -20,17 +20,17 @@ sections:
       - title: Navigating and Jumping through Obstacles of an Unknown Environment with the MIT Mini Cheetah (Accepted IEEE CASE 2021)
         text: Using Trajectory Optimization to enhance quadruped navigation by jumping through obstacles to new areas within an unknown enviroment.
         icon: assets/files/projects/Jumping_Mini_Cheetah/Icon.png
-        url: 'pages/Forward_Jump'
+        url: 'pages/Jumping_Mini_Cheetah'
 
       - title: MIT Mini Cheetah Sensor Suite
         text: Design and prototyping of a sensor suite for the Mini Cheetah to successfully navigate an environment through cameras with added constraints.
         icon: assets/files/projects/Cheetah_Sensor_Suite/Icon.png
-        url: 'pages/Forward_Jump'
+        url: 'pages/Cheetah_Sensor_Suite'
 
       - title: Agility Robotics' Cassie Sensor Suite
         text: Design and prototyping of a sensor suite for Cassie, a bipedal robot allowing for navigation of an environment through LiDAR and cameras with added constraints.
         icon: assets/files/projects/Cassie_Sensor_Suite/Icon.png
-        url: 'pages/Forward_Jump'
+        url: 'pages/Cassie_Sensor_Suite'
 
       - title: Forward Jumping with a Quadrupedal Robot
         text: Development of a novel forward jumping optimization to perform jumps over obstacles with quadruped robots.
