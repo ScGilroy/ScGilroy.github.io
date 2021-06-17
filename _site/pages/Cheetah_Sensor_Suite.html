@@ -1,0 +1,127 @@
+<!doctype html>
+<html prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta property="og:title" content="Scott's Personal Website" />
+  <meta property="og:type" content="Portfolio" />
+  <meta property="og:image" content="https://ScGilroy.github.io/assets/files/home/background/Scott.jpg" />
+  <meta name="description" content="Scott's Personal Website">
+
+  <title>Scott Gilroy</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+  <link href="/assets/css/creative.css" rel="stylesheet">
+  <link href="/assets/css/main.css" rel="stylesheet">
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Scott Gilroy</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Scott Gilroy" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/pages/Cheetah_Sensor_Suite.html" />
+<meta property="og:url" content="http://localhost:4000/pages/Cheetah_Sensor_Suite.html" />
+<meta property="og:site_name" content="Scott Gilroy" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Scott Gilroy" />
+<script type="application/ld+json">
+{"@type":"WebPage","headline":"Scott Gilroy","url":"http://localhost:4000/pages/Cheetah_Sensor_Suite.html","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body id="page-top" class="">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand js-scroll-trigger" href="/#page-top">Scott Gilroy</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto my-2 my-lg-0">
+        
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#about">About Me</a>
+          </li>
+        
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#projects">Projects</a>
+          </li>
+        
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/pages/Resume.html">Resume</a>
+          </li>
+        
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#contact">Contact</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <div class="bg-project">
+<header class="project-header-main" style="background-image:url( http://localhost:4000/assets/files/projects/Cheetah_Sensor_Suite/Banner.png )">
+  <div class="bg-port"></div>
+  <div class="project-title-main">
+    <h1>Mini Cheetah Sensor Suite</h1>
+  </div>
+</header>
+<div class="projectContentWrapper">
+  <div class="overview">
+    <div class="main">
+      <p class="medium bio">The Mini Cheetah is very capable quadruped of performing a wide range of dynamic motions. The addition of a sensor suite can improve the robot's capabilities by allowing the ability to map and navigate through unknown environments.</p>
+      <p class="small bio"> <b>Skills Utilized: </b></p>
+      <a class="tables">
+        <ul>
+          <li>Autodesk Inventor</li>
+          <li>Excel</li>
+          <li>Product Design</li>
+          <li>Rapid Prototyping</li>
+        </ul>
+      </a>
+    </div>
+  </div>
+  <hr>
+  <h4>Objective</h4>
+  <p class="tab">The overall objective of this project was to design a modular sensor kit that houses an Intel NUC, external battery, and various sensors needed for mapping and localization. University of Michigan's Robotics Laboratory has already developed a sensor suite for their Mini Cheetah which features an Nvidia Xavier, much smaller than the Intel NUC, as well as a different external battery. Therefore, their design would require purchasing all new hardware.</p>
+
+  <h4>Requirements and Constraints</h4>
+  <p class="tab">The sensor suite had to follow some requirements and self-added design constraints. Some of the physical requirements include must be easily removed from the robot itself for storage and have various attachment points must be provided on the front and top for sensors (ie. Depth Camera, Tracking Camera, LIDAR, etc.).</p>
+  <p class="tab">Some of the self-added design constraints include designing a model which can be printed with limited supports. Having the ability to adjust the forward and backward position of the sensor suite can allow for tuning of the center of mass. Creating a compact, lightweight and low center of mass kit allows attempts to limit the displacement of the center of mass from the original location of the robot. Additionally, the robot should allow for nuts to be pressed into the plastic so they remain within the part when disassembly is needed.</p>
+
+  <h4>Design</h4>
+  <p class="tab">Initially, the design encompassed keeping the external battery as low as possible within the design with the Intel NUC. This would maintain the low center of mass needed for some upcoming projects. With the battery and Intel NUC situated, holes for ventilation and wiring were needed. A divider was put in place to prevent the Intel NUC from sliding forward from impacts, improve the rigidity of the sensor suite if it were to take an impact, and provide the Intel NUC with exhaust out the sides of the kit. </p>
+
+  <p class="tab">Since the sensor kit needs to be easily detached from the Mini Cheetah for storage, I needed to devise a method that could keep the position of the kit on top of the cheetah, and prevent the kit from coming off if something were to break upon a large impact. A part was designed to cover the attachment points on top of the Mini Cheetah's torso. This part featured a sliding mechanism to prevent the kit from leaving the robot if anything were to break.</p>
+
+  <p class="tab">For the sensor kit to accomdate a wide range of sensors such as depth cameras, tracking cameras and LiDAR, the kit required multiple different attachment points. To place the sensors in the best location, I decided to use a hexagon pattern, which is a good shape since it allows for the inserts to be put in various orientations. This pattern was repeated on the top and front panels allowing multiple sensors to be attached at once. </p>
+
+
+  <h4> This Page is still a work in progress, Sorry! Please feel free to contact me if you want more information!</h4>
+  <div class="spacer"></div>
+</div>
+
+</div>
+
+  <!-- no footer at all! -->
+<footer class="bg-white py-5">
+  <div class="container">
+    <div class="small text-center foot-color">
+      &copy; 2021 by Scott Gilroy
+      &nbsp;
+      
+    </div>
+  </div>
+</footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  <script src="/assets/js/creative.min.js"></script>
+</body>
+
+</html>

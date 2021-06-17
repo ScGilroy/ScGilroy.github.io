@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>http://localhost:4000/pages/3D_Printed_Quadruped.html</loc>
+</url>
+<url>
 <loc>http://localhost:4000/pages/Astrophotography.html</loc>
 </url>
 <url>
 <loc>http://localhost:4000/pages/Balance.html</loc>
+</url>
+<url>
+<loc>http://localhost:4000/pages/Cassie_Sensor_Suite.html</loc>
+</url>
+<url>
+<loc>http://localhost:4000/pages/Cheetah_Sensor_Suite.html</loc>
 </url>
 <url>
 <loc>http://localhost:4000/pages/Cooler.html</loc>
@@ -14,6 +23,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/pages/IK_Baxter.html</loc>
+</url>
+<url>
+<loc>http://localhost:4000/pages/Jumping_Mini_Cheetah.html</loc>
 </url>
 <url>
 <loc>http://localhost:4000/pages/Odd_Couple_Clock.html</loc>
@@ -44,5 +56,8 @@
 </url>
 <url>
 <loc>http://localhost:4000/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/pages/temp.html</loc>
 </url>
 </urlset>
